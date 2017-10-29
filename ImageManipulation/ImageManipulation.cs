@@ -44,5 +44,10 @@ namespace ImageManipulation
                 }
             }
         }
+
+        public void Sample()
+        {
+            
+        }
     }
 }
