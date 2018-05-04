@@ -12,6 +12,7 @@ namespace ImageManipulation
 {
     public class ImageManipulation
     {
+        //This will enable the that only one object of this class will be created
         private ImageManipulation(){}
         private static ImageManipulation _instanceImageManip= null;
         public static ImageManipulation Instance => _instanceImageManip ?? (_instanceImageManip = new ImageManipulation());
@@ -44,5 +45,14 @@ namespace ImageManipulation
                 }
             }
         }
+
+        public void GenerateMsg(string msg)
+        {
+            if (msg.Equals(""))
+            {
+                Console.WriteLine("msg is null");
+            }
+        }
+        
     }
 }
